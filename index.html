@@ -100,7 +100,7 @@
                     compression: "DEFLATE",
                 });
                 // Output the document using Data-URI
-                saveAs(blob, "output.docx");
+                saveAs(blob, document.getElementById("name").value+".docx");
             }
         );
     };
