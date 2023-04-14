@@ -35,6 +35,10 @@
             <label for="mandal" class="form-label">Mandal</label>
             <input type="text" class="form-control" id="mandal">
         </div>
+        <div class="mb-3">
+            <label for="assessment_number" class="form-label">Mandal</label>
+            <input type="text" class="form-control" id="assessment_number">
+        </div>
         <!-- <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -88,7 +92,8 @@
                     "panchayat": document.getElementById("panchayat").value,
                     "mandal": document.getElementById("mandal").value,
                     "door_number": document.getElementById("door_number").value,
-                    "father_name": document.getElementById("father_name").value
+                    "father_name": document.getElementById("father_name").value,
+                    "assessment_number": document.getElementById("assessment_number").value
                 });
 
                 var blob = doc.getZip().generate({
