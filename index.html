@@ -39,6 +39,15 @@
             <label for="assessment_number" class="form-label">Assessment Number</label>
             <input type="text" class="form-control" id="assessment_number">
         </div>
+        <div class="mb-3">
+            <label for="date1" class="form-label">Date1</label>
+            <input type="text" class="form-control" plaeholder="2021" id="date1">
+        </div>
+        <div class="mb-3">
+            <label for="date2" class="form-label">Date2</label>
+            <input type="text" class="form-control" plaeholder="2020-21" id="date2">
+        </div>
+        
         <!-- <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -79,13 +88,13 @@
                     paragraphLoop: true,
                     linebreaks: true,
                 });
-                console.log({
-                    "name": document.getElementById("name").value,
-                    "panchayat": document.getElementById("panchayat").value,
-                    "mandal": document.getElementById("mandal").value,
-                    "door_number": document.getElementById("door_number").value,
-                    "father_name": document.getElementById("father_name").value
-                })
+                // console.log({
+                //     "name": document.getElementById("name").value,
+                //     "panchayat": document.getElementById("panchayat").value,
+                //     "mandal": document.getElementById("mandal").value,
+                //     "door_number": document.getElementById("door_number").value,
+                //     "father_name": document.getElementById("father_name").value
+                // })
                 // Render the document (Replace {first_name} by John, {last_name} by Doe, ...)
                 doc.render({
                     "name": document.getElementById("name").value,
@@ -93,7 +102,9 @@
                     "mandal": document.getElementById("mandal").value,
                     "door_number": document.getElementById("door_number").value,
                     "father_name": document.getElementById("father_name").value,
-                    "assessment_number": document.getElementById("assessment_number").value
+                    "assessment_number": document.getElementById("assessment_number").value,
+                    "date1": document.getElementById("date1").value,
+                    "date2": document.getElementById("date2").value
                 });
 
                 var blob = doc.getZip().generate({
